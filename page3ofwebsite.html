@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="web.css">
+	<div style="width:1350px;">
+  		<div style="width:100px; float:right;"><div class="topnav"><a href ="#about">About</a></div></div>
+  		<div style="width:180px; float:right;"><div class="topnav"><a href ="#about">My Crochets</a></div></div>
+  		<div style="width:240px; float:right;"><div class="topnav"><a  class="active" href ="#about">My Magic Cards</a></div></div>
+  		<div style="width:100px; float:right;"><div class="topnav"><a href ="./page2ofwebsite.html">Gallery</a></div></div>
+  		<div style="width:100px; float:right;"><div class="topnav"><a href ="./index.html">Home</a></div></div>
+
+  		<div style = "width:500px; float: left;"><h1><strong>My magic Cards</strong></h1></div>
+	</div>
+	<div style="clear: both;"></div>
+<head>
+<body onload = "checkdarkmode2()"> 
+	
+
+
+
+<div class="gallery">
+  <a target="_blank" href="demonictutor.jpg">
+    <img src="demonictutor.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Demonic Tutor ~$44</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="oculus.jpg">
+    <img src="oculus.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Abhorrent Oculus ~$40</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="terror.jpg">
+    <img src="terror.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Terror of the Peaks ~$18</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="craterhoof.jpg">
+    <img src="craterhoof.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Craterhoof Behemoth ~$25</div>
+</div>
+
+<script>
+    function checkdarkmode2(){
+      
+
+        if (localStorage.getItem('darkmode') == 'True') {
+
+          let element = document.body;
+              element.classList.toggle("dark");
+
+    
+
+      }
+    }
+  </script>
+</body>
+</html>
