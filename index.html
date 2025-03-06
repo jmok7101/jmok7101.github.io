@@ -44,15 +44,19 @@
 
   		
 		function welcomefunction() {
+			if (localStorage.getItem('darkmode') == null){
+				localStorage.setItem("darkmode", "False")
+			}
 			if (localStorage.getItem('darkmode') == 'True') {
 
 	    		let element = document.body;
 	            element.classList.toggle("dark");
-
+	        }
+	        
 
 	  
 
-			}
+			
 			
 
 		}
