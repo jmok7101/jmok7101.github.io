@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="web.css">
+  <div style="width:1350px;">
+      <div style="width:100px; float:right;"><div class="topnav"><a href ="./page5ofwebsite.html">About</a></div></div>
+      <div style="width:180px; float:right;"><div class="topnav"><a class="active" href ="#about">My Crochets</a></div></div>
+      <div style="width:240px; float:right;"><div class="topnav"><a href ="./page3ofwebsite.html">My Magic Cards</a></div></div>
+      <div style="width:100px; float:right;"><div class="topnav"><a href ="./page2ofwebsite.html">Gallery</a></div></div>
+      <div style="width:100px; float:right;"><div class="topnav"><a href ="./index.html">Home</a></div></div>
+
+      <div style = "width:500px; float: left;"><h1><strong>Gallery</strong></h1></div>
+  </div>
+  <div style="clear: both;"></div>
+<head>
+<body onload = "checkdarkmode()"> 
+  
+
+  <div class="gallery">
+    <a target="_blank" href="suushi.jpg">
+      <img src="suushi.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="suushi.jpg">
+      <img src="suushi.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="suushi.jpg">
+      <img src="suushi.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="suushi.jpg">
+      <img src="suushi.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <script>
+    function checkdarkmode(){
+      
+
+        if (localStorage.getItem('darkmode') == 'True') {
+
+          let element = document.body;
+              element.classList.toggle("dark");
+
+    
+
+      }
+    }
+  </script>
+
+</body>
+</html>
